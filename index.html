@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loadingScreen">
+        <div class="loading-heart"></div>
+    </div>
+
+    <!-- First Page -->
+    <div id="firstPage">
+        <div class="question-container">
+            <img src="Screenshot 2025-02-13 233814.png">
+            <h1 class="first-question"></h1>
+            <button class="cute-button" onclick="showMainContent()">Yes, of course!</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+     
+    <div id="mainContent">
+
+       
+            <div class="heart"></div>
+            <h1 class="parisienne-large">Will You Be My Valentine?</h1>
+            <p >Rawan,</p>
+            <p>Every moment with you makes my heart skip a beat and feels nothing short of magical ❤️. Would you make me the happiest person by being my Valentine?</p>
+
+            <div class="buttons">
+                <button id="yesBtn" onclick="handleResponse(true)">Yes!</button>
+                <button id="noBtn" onclick="handleResponse(false)" onmouseover="moveButton()">No</button>
+            </div>
+            <div id="response"></div>
+            <canvas id="confetti-canvas"></canvas>
+            <h1 class="parisienne-regular">The One...</h1>
+        <div class="container">
+            <div class="photo-wall" id="photoWall">
+                <!-- Photos will be added by JavaScript -->
+            </div>
+
+            
+            <!-- <audio id="bgMusic" loop>
+                <source src="zaalima.mp3" type="audio/mpeg">
+            </audio> -->
+        </div>
+
+
+        <div class="music-controls">
+            <button onclick="toggleMusic()" id="musicToggle">🎵 Play Music</button>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" onchange="adjustVolume(this.value)">
+        </div>
+
+        <audio id="bgMusic" loop>
+            <source src="14H944PJ.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
